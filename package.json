@@ -124,7 +124,7 @@
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
-    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "lint": "eslint src/components/**/*.jsx",
     "test": "jest && npm run lint",
     "test-update": "jest --no-coverage -u",
     "test-watch": "jest --no-coverage --watch",
