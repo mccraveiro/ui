@@ -1,0 +1,64 @@
+---
+name: Button
+menu: UI Components
+route: /button
+order: 4.1
+---
+
+import Button from '../../../components/Button';
+import Folder from '../../../components/Icon/Icons/Folder';
+import Example from '../../layout/components/Example';
+
+# Button
+
+All buttons, including text, link and split-buttons, follow the same core principles in dimensions, padding, and font sizes. Combined with simple modifiers, they can be changed in size and appearance.
+
+## Examples
+
+### Button sizes
+
+<Example
+  code='<Button type="primary" size="large" onClick={() => {}} label="Click Me" />'
+  description="Large"
+>
+  <Button type="primary" size="large" onClick={() => {}} label="Click Me" />
+</Example>
+
+<Example
+  code='<Button type="primary" onClick={() => {}} label="Click Me" />'
+  description="Normal"
+>
+  <Button type="primary" onClick={() => {}} label="Click Me" />
+</Example>
+
+<Example
+  code='<Button type="primary" size="small" onClick={() => {}} label="Click Me" />'
+  description="Small"
+>
+  <Button type="primary" size="small" onClick={() => {}} label="Click Me" />
+</Example>
+
+### Button states
+
+<Example
+  code='<Button type="primary" disabled onClick={() => {}} label="Click Me" />'
+  description="Disabled"
+>
+  <Button type="primary" disabled onClick={() => {}} label="Click Me" />
+</Example>
+
+<Example
+  code='<Button type="primary" loading onClick={() => {}} label="Click Me" />'
+  description="Loading"
+>
+  <Button type="primary" loading onClick={() => {}} label="Click Me" />
+</Example>
+
+### Button types
+
+<Example
+  code='<Button type="secondary" icon={<Folder />} hasIconOnly onClick={() => {}} label="Click Me" />'
+  description="Secondary Button With Icon"
+>
+  <Button type="secondary" icon={<Folder />} hasIconOnly onClick={() => {}} label="Click Me" />
+</Example>

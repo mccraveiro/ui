@@ -65,6 +65,7 @@
     "cpx": "1.5.0",
     "cross-env": "^5.2.0",
     "css-loader": "1.0.0",
+    "docz": "^0.13.4",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
     "enzyme": "3.7.0",
@@ -119,12 +120,8 @@
     "workbox-webpack-plugin": "3.6.3"
   },
   "scripts": {
-    "prestart": "npm run gen:docs",
-    "start": "npm-run-all --parallel start:docs gen:docs-watch",
-    "start:docs": "node scripts/start.js",
-    "gen:docs": "node scripts/generateComponentData.js",
-    "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build:docs": "node scripts/build.js",
+    "start": "docz dev",
+    "build:docs": "docz build",
     "lint": "./node_modules/eslint/bin/eslint.js .",
     "test": "jest && npm run lint",
     "test-update": "jest --no-coverage -u",

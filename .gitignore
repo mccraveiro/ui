@@ -28,9 +28,8 @@ yarn-error.log*
 # built docs
 /docs
 
-# Generated component data
-/config/componentData.js
-
 # Webstorm
 .idea
 
+# Docz
+.docz
